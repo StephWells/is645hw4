@@ -1,9 +1,10 @@
 const totalwords = [];
 
 let word = "";
-while (word !== "stop") {
-  word = prompt("Enter a word. Enter 'stop' to exit.");
-  if (word !== "stop") {
+
+while (word.toLowerCase() !== "stop") {
+  word = prompt("Enter a word. Enter stop to exit.");
+  if (word.toLowerCase() !== "stop") {
     totalwords.push(word);
   }
 }
